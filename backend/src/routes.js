@@ -9,7 +9,7 @@ const routes = express.Router();
 
 const connection = require('./database/connection');
 
-routes.get('/login', SessionController.create);
+routes.post('/login', SessionController.create);
 
 routes.get('/ongs', OngController.index);
 routes.post("/ongs", OngController.create );
